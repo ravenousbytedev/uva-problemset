@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <bitset>
 #include <ios>
 #include <iostream>
@@ -29,7 +30,7 @@ int main() {
                 ++n_b;
             }
         }
-        std::cout << (n_a < n_b ? n_a : n_b) << '\n';
+        std::cout << std::min(n_a, n_b) << '\n';
         x_bitset.reset();
         y_bitset.reset();
     }
