@@ -1,3 +1,4 @@
+#include <algorithm>
 #include <ios>
 #include <iostream>
 
@@ -15,7 +16,7 @@ int main() {
             min_bwd_presses = a - b;
         }
         std::cout
-            << (min_fwd_presses < min_bwd_presses ? min_fwd_presses : min_bwd_presses)
+            << std::min(min_fwd_presses, min_bwd_presses)
             << '\n';
     }
     return 0;
