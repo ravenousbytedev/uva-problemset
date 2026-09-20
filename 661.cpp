@@ -19,7 +19,7 @@ int main() {
         }
         curr_consumption = 0;
         max_consumption = 0;
-        while (m--) {
+        while (m-- > 0) {
             std::cin >> i;
             states[i].flip();
             if (states[i]) {
