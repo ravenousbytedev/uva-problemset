@@ -14,7 +14,7 @@ int main() {
         std::cin >> m;
         oudler_count = 0;
         double_pts = 0;
-        while (m--) {
+        while (m-- > 0) {
             std::cin >> card;
             if (card == "fool" || card == "one" || card == "twenty-one") {
                 ++oudler_count;
